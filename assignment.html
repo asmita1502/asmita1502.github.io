@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+<script>
+	function submitHandler(){
+		const a = parseInt(document.getElementById("Value1").value);
+		const b = parseInt(document.getElementById("Value2").value);
+		const sum = a + b;
+		alert(`The sum of ${a} and ${b} is ${sum}`);
+	}
+</script>
+<form action="#" onsubmit="submitHandler()">
+            <div id="sec">
+                <label for="Value1">Value1</label>
+                <input type="text" name="Value1" id="Value1" placeholder="Enter num 1">
+                <br>
+                <label for="Value2">Value2 </label>
+                <input type="text" name="Value2" id="Value2" placeholder="Enter num 2">
+                <br>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+</body>
+</html>
